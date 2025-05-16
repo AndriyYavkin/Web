@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HomeTech - Каталог</title>
+    
+    <!-- CDN посилання -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header bg-light py-3">
+        <div class="container-xxl">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+                <a class="navbar-brand mb-3 mb-md-0" href="#">
+                    <img src="https://logoipsum.com/logoipsum.png" 
+                         alt="HomeTech" 
+                         width="90" 
+                         height="60">
+                </a>
+                <div class="contacts mb-3 mb-md-0">
+                    <div class="fw-bold">Контакти:</div>
+                    +38 (044) 123-45-67<br>
+                    +38 (067) 987-65-43
+                </div>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                    Зворотній зв'язок
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Навігація з активним пунктом -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-xxl">
+            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Послуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Про нас</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-xxl my-5">
+    <h1 class="text-center mb-5 display-4">Повний спектр послуг</h1>
+    
+    <div class="row g-4">
+        <!-- Додаткові послуги -->
+        <div class="col-md-6 col-lg-4">
+            <div class="service-card bg-light p-4 rounded-3 shadow-sm h-100">
+                <div class="icon-wrapper bg-primary rounded-circle p-3 mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                    <i class="bi bi-shield-check text-white fs-3"></i>
+                </div>
+                <h3 class="text-center text-primary">Гарантійне обслуговування</h3>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-check2-circle text-primary me-2"></i>Офіційна гарантія</li>
+                    <li><i class="bi bi-check2-circle text-primary me-2"></i>Швидкий виїзд майстра</li>
+                    <li><i class="bi bi-check2-circle text-primary me-2"></i>Оригінальні запчастини</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="service-card bg-light p-4 rounded-3 shadow-sm h-100">
+                <div class="icon-wrapper bg-primary rounded-circle p-3 mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                    <i class="bi bi-person-video3 text-white fs-3"></i>
+                </div>
+                <h3 class="text-center text-primary">Відеоконсультації</h3>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-check2-circle text-primary me-2"></i>Онлайн діагностика</li>
+                    <li><i class="bi bi-check2-circle text-primary me-2"></i>Дистанційна допомога</li>
+                    <li><i class="bi bi-check2-circle text-primary me-2"></i>Інструктаж користування</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Про компанію</h5>
+                    <p>HomeTech - лідер у продажу якісної побутової техніки</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Контакти</h5>
+                    <ul class="list-unstyled">
+                        <li>м. Київ, вул. Технічна 15</li>
+                        <li>Пн-Пт: 9:00-20:00</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Ми в соцмережах</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">&copy; 2023 HomeTech</div>
+        </div>
+    </footer>
+
+    <!-- Feedback Modal -->
+    <div class="modal fade" id="feedbackModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Форма зворотнього зв'язку</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="feedbackForm">
+                        <div class="mb-3">
+                            <label class="form-label">Ваше ім'я</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Повідомлення</label>
+                            <textarea class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- CDN скрипти -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

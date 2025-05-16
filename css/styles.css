@@ -1,0 +1,177 @@
+/* Глобальні стилі */
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.phones {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Стилі для каталогу */
+.catalog-page {
+    background: #f8f9fa;
+    min-height: 70vh;
+}
+
+.category-card {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    border-color: #0d6efd;
+}
+
+.category-list .list-group-item {
+    border: none;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.category-list .list-group-item.active {
+    background: #e7f1ff !important;
+    color: #0d6efd !important;
+    font-weight: 600;
+}
+
+.product-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(0,0,0,0.125);
+    background: #fff;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+}
+
+.price-tag {
+    font-size: 1.25rem;
+    color: #dc3545;
+    font-weight: 700;
+}
+
+.stock-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    font-size: 0.9rem;
+}
+
+.product-image {
+    height: 200px;
+    object-fit: contain;
+    padding: 15px;
+}
+
+/* Стилі для сторінки "Про нас" */
+.about-page {
+    background: #fff;
+}
+
+.history-section {
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
+                url('https://cdn.pixabay.com/photo/2017/08/06/22/01/people-2597454_1280.jpg');
+    background-size: cover;
+    padding: 3rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+}
+
+.advantages-list .list-group-item {
+    border: none;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 10px !important;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.advantages-list .list-group-item::before {
+    content: "✓";
+    color: #0d6efd;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+    border: 3px solid #0d6efd;
+    padding: 3px;
+}
+
+.section-divider {
+    height: 2px;
+    background: #dee2e6;
+    margin: 3rem 0;
+}
+
+.values-card {
+    border: none;
+    background: #f8f9fa;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.values-card:hover {
+    background: #e9ecef;
+    transform: translateY(-5px);
+}
+
+.values-card i {
+    margin-bottom: 1rem;
+}
+
+/* Загальні стилі */
+.social-links i {
+    font-size: 24px;
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover i {
+    opacity: 0.8;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+}

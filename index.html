@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HomeTech - Головна</title>
+    
+    <!-- CDN посилання -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header bg-light py-3">
+        <div class="container-xxl">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+                <a class="navbar-brand mb-3 mb-md-0" href="#">
+                    <img src="https://logoipsum.com/logoipsum.png" 
+                         alt="HomeTech" 
+                         width="90" 
+                         height="60">
+                </a>
+                <div class="contacts mb-3 mb-md-0">
+                    <div class="fw-bold">Контакти:</div>
+                    +38 (044) 123-45-67<br>
+                    +38 (067) 987-65-43
+                </div>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                    Зворотній зв'язок
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-xxl">
+            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Головна</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Послуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Про нас</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="hero-section bg-gradient-primary text-white py-5">
+    <div class="container-xxl text-center">
+        <h1 class="display-4 mb-4 fw-bold">Професійні рішення для вашого дому</h1>
+        <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+            <div class="badge bg-light text-primary fs-5 mb-2 mb-md-0">20+ років досвіду</div>
+            <div class="badge bg-light text-primary fs-5">Гарантія якості</div>
+        </div>
+    </div>
+</div>
+
+    <!-- Slider -->
+    <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner container-xxl">
+            <div class="carousel-item active">
+                <img src="https://ns-plus.com.ua/wp-content/uploads/2019/12/Screenshot_6-2-1104x552.jpg"
+                    width="1200"
+                    height="400"
+                    class="d-block w-100"
+                    alt="Акція">
+            </div>
+            <div class="carousel-item">
+                <img src="https://doctor-h.com.ua/content/images/39/remont-pobutovoi-tekhniky-svoimy-sylamy-varto-chy-ni-ta-yak-pidibraty-yakisni-zapchastyny-22266442782941.jpg" width="1200" height="400" class="d-block w-100" alt="Новинки">
+            </div>
+            <div class="carousel-item">
+                <img src="https://doctor-h.com.ua/content/images/39/remont-pobutovoi-tekhniky-svoimy-sylamy-varto-chy-ni-ta-yak-pidibraty-yakisni-zapchastyny-22266442782941.jpg" width="1200" height="400" class="d-block w-100" alt="Кухня">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn0.it4profit.com/s3//cms/product/88/0e/880e2254a6e06c736dc763082964b794/1200_400_pobutova_texnika.webp" width="1200" height="400" class="d-block w-100" alt="Товари">
+            </div>
+            <div class="carousel-item">
+                <img src="https://nana.ua/content/images/6/dityacha-pobutova-tehnika-chomu-vona-vazhliva-i-yaki-perevagi-daye-98306071519464.jpg" width="1200" height="400" class="d-block w-100" alt="Техніка">
+            </div>
+        </div>
+    </div>
+
+    <main class="container-xxl my-5">
+        <h2 class="text-center mb-5 display-4">Наші послуги</h2>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card bg-light p-4 rounded-3 shadow-sm h-100 text-center">
+                    <div class="icon-wrapper bg-primary rounded-circle p-3 mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                        <i class="bi bi-house-gear text-white fs-3"></i>
+                    </div>
+                    <h3 class="text-primary mb-3">Смарт-інтеграція</h3>
+                    <ul class="list-unstyled text-start">
+                        <li><i class="bi bi-check2-circle text-primary me-2"></i>Підключення системи</li>
+                        <li><i class="bi bi-check2-circle text-primary me-2"></i>Налаштування автоматизації</li>
+                        <li><i class="bi bi-check2-circle text-primary me-2"></i>Підтримка 24/7</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card bg-light p-4 rounded-3 shadow-sm h-100">
+                    <div class="icon-wrapper bg-primary rounded-circle p-3 mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                        <i class="bi bi-lightning-charge text-white fs-3"></i>
+                    </div>
+                    <h3 class="text-center text-primary">Енергоефективні рішення</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check2-circle text-primary me-2"></i>Аналіз споживання</li>
+                        <li><i class="bi bi-check2-circle text-primary me-2"></i>Підбір економної техніки</li>
+                        <li><i class="bi bi-check2-circle text-primary me-2"></i>Оптимізація витрат</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card bg-light p-4 rounded-3 shadow-sm h-100">
+                    <div class="icon-wrapper bg-primary rounded-circle p-3 mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
+                        <i class="bi bi-house-gear text-white fs-3"></i>
+                    </div>
+                    <h3 class="text-center text-primary">Смарт-інтеграція</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check2-circle text-primary me-2"></i>Підключення до системи "розумний дім"</li>
+                        <li><i class="bi bi-check2-circle text-primary me-2"></i>Налаштування автоматизації</li>
+                        <li><i class="bi bi-check2-circle text-primary me-2"></i>Технічна підтримка 24/7</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Про компанію</h5>
+                    <p>HomeTech - лідер у продажу якісної побутової техніки</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Контакти</h5>
+                    <ul class="list-unstyled">
+                        <li>м. Київ, вул. Технічна 15</li>
+                        <li>Пн-Пт: 9:00-20:00</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Ми в соцмережах</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">&copy; 2023 HomeTech</div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="feedbackModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Форма зворотнього зв'язку</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="feedbackForm">
+                        <div class="mb-3">
+                            <label class="form-label">Ваше ім'я</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Повідомлення</label>
+                            <textarea class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
